@@ -67,10 +67,7 @@ var displayRepos = function(repos, searchTerm) {
 
     // change the url to include the query parameter
     repoEl.setAttribute("href", "./single-repo.html?repo=" + repoName);
-    // create a span element to hold repository name
-
-
-
+    
     // create a span element to hold repository name
     var titleEl = document.createElement("span");
     titleEl.textContent = repoName;
@@ -99,4 +96,5 @@ var displayRepos = function(repos, searchTerm) {
 };
 
 userFormEl.addEventListener("submit", formSubmitHandler);
+
 
